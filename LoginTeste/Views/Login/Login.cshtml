@@ -1,0 +1,281 @@
+﻿@page
+@model LoginTeste.Views.Login.LoginModel
+@{
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Serviço Fácil</title>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous" />
+    <link rel="stylesheet" href="../html/serviços.css" />
+</head>
+
+<body>
+    <header>
+        <section class="header">
+            <a href="./index.html">
+                <img class="header_logo"
+                     src="../assets/img/Logo2.jpg"
+                     alt="Logo Serviço Fácil" />
+            </a>
+
+            <section class="header_links">
+                <a class="header_link" href="#"> Home </a>
+                <a class="header_link" href="#"> Sobre </a>
+                <a class="header_link" href="#"> Serviços </a>
+                <a class="header_link" href="#"> Cadastro </a>
+                <a class="header_link" href="#"> Entrar </a>
+            </section>
+
+            <div class="header_menu_compacto">
+                <input type="checkbox" id="menu" class="botao_checkbox" />
+                <label for="menu" class="menu__ativo"></label>
+                <label for="menu">
+                    <span class="cabecalho__menu_sanduiche"></span>
+                </label>
+                <ul class="lista-menu">
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Home</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Sobre</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Serviços</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Cadastro</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Entrar</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="pesquisar_servico">
+            <input type="search" class="input_pesquisar" placeholder="Pesquisar" />
+        </section>
+
+        <div id="carouselExampleControls"
+             class="carousel slide carousel_servicos"
+             data-ride="carousel">
+            <div class="carousel-control-prev carousel_servicos_prev"
+                 type="button"
+                 data-target="#carouselExampleControls"
+                 data-slide="prev">
+                <span class="carousel-control-prev-icon carousel_servicos_icone_antigo"
+                      aria-hidden="true"></span>
+                <i class="fa-solid fa-chevron-left carousel-previous-icon"></i>
+                <span class="sr-only carousel_servicos_prev_icone">Previous</span>
+            </div>
+
+            <div class="carousel-inner carousel_servicos_conteudo">
+                <div class="carousel-item carousel_servicos_conteudo_visivel active">
+                    <div class="row catalogo_carousel">
+                        <div class="card_servico">
+                            <img src="../../docs/img/Ana_Clara_Mendes.jpeg"
+                                 class="img_servico card-img-top"
+                                 alt="Foto do prestador de serviços" />
+                            <h1 class="titulo_servico">Eletricista 1</h1>
+                            <p class="localizacao_servico">Belo Horizonte</p>
+                            <p class="descricao_servico">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Porro nulla necessitatibus inventore ducimus officia
+                                perspiciatis at saepe ipsa minima sequi. Exercitationem nam
+                                dolores est odit tenetur delectus vel, laboriosam expedita
+                                fugit reiciendis voluptates corrupti ad, at accusantium ullam
+                                laudantium quis sunt deserunt id natus magni repellat, culpa
+                                ratione? Explicabo, ipsa?
+                            </p>
+                            <a href="#" class="card_link">Ver mais</a>
+                        </div>
+
+                        <div class="card_servico">
+                            <img src="../../docs/img/Ana_Clara_Mendes.jpeg"
+                                 class="img_servico card-img-top"
+                                 alt="Foto do prestador de serviços" />
+                            <h1 class="titulo_servico">Eletricista 2</h1>
+                            <p class="localizacao_servico">Belo Horizonte</p>
+                            <p class="descricao_servico">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                                eligendi dolore provident repudiandae porro perferendis fugit
+                                illum. Illum, voluptate reprehenderit, expedita culpa aperiam
+                                ipsa consequatur, mollitia fugit est aliquam corporis.
+                            </p>
+                            <a href="#" class="card_link">Ver mais</a>
+                        </div>
+
+                        <div class="card_servico">
+                            <img src="../../docs/img/Ana_Clara_Mendes.jpeg"
+                                 class="img_servico card-img-top"
+                                 alt="Foto do prestador de serviços" />
+                            <h1 class="titulo_servico">Eletricista 3</h1>
+                            <p class="localizacao_servico">Belo Horizonte</p>
+                            <p class="descricao_servico">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Maxime hic vero dolor natus reprehenderit ullam excepturi
+                                velit dolores error qui, ut recusandae neque accusantium
+                                alias, corrupti eaque animi voluptatem soluta. Ut autem
+                                facilis dicta expedita dolores! Maxime error pariatur
+                                recusandae.
+                            </p>
+                            <a href="#" class="card_link">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row catalogo_carousel">
+                        <div class="card_servico">
+                            <img src="../../docs/img/Carlos_Oliveira.jpeg"
+                                 class="img_servico card-img-top"
+                                 alt="Foto do prestador de serviços" />
+                            <h1 class="titulo_servico">Eletricista 4</h1>
+                            <p class="localizacao_servico">Belo Horizonte</p>
+                            <p class="descricao_servico">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Porro nulla necessitatibus inventore ducimus officia
+                                perspiciatis at saepe ipsa minima sequi. Exercitationem nam
+                                dolores est odit tenetur delectus vel, laboriosam expedita
+                                fugit reiciendis voluptates corrupti ad, at accusantium ullam
+                                laudantium quis sunt deserunt id natus magni repellat, culpa
+                                ratione? Explicabo, ipsa?
+                            </p>
+                            <a href="#" class="card_link">Ver mais</a>
+                        </div>
+
+                        <div class="card_servico">
+                            <img src="../../docs/img/Carlos_Oliveira.jpeg"
+                                 class="img_servico card-img-top"
+                                 alt="Foto do prestador de serviços" />
+                            <h1 class="titulo_servico">Eletricista 5</h1>
+                            <p class="localizacao_servico">Belo Horizonte</p>
+                            <p class="descricao_servico">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                                eligendi dolore provident repudiandae porro perferendis fugit
+                                illum. Illum, voluptate reprehenderit, expedita culpa aperiam
+                                ipsa consequatur, mollitia fugit est aliquam corporis.
+                            </p>
+                            <a href="#" class="card_link">Ver mais</a>
+                        </div>
+
+                        <div class="card_servico">
+                            <img src="../../docs/img/Carlos_Oliveira.jpeg"
+                                 class="img_servico card-img-top"
+                                 alt="Foto do prestador de serviços" />
+                            <h1 class="titulo_servico">Eletricista 6</h1>
+                            <p class="localizacao_servico">Belo Horizonte</p>
+                            <p class="descricao_servico">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Maxime hic vero dolor natus reprehenderit ullam excepturi
+                                velit dolores error qui, ut recusandae neque accusantium
+                                alias, corrupti eaque animi voluptatem soluta. Ut autem
+                                facilis dicta expedita dolores! Maxime error pariatur
+                                recusandae.
+                            </p>
+                            <a href="#" class="card_link">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row catalogo_carousel">
+                        <div class="card_servico">
+                            <img src="../../docs/img/Fernanda_Dias.jpeg"
+                                 class="img_servico card-img-top"
+                                 alt="Foto do prestador de serviços" />
+                            <h1 class="titulo_servico">Eletricista 7</h1>
+                            <p class="localizacao_servico">Belo Horizonte</p>
+                            <p class="descricao_servico">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Porro nulla necessitatibus inventore ducimus officia
+                                perspiciatis at saepe ipsa minima sequi. Exercitationem nam
+                                dolores est odit tenetur delectus vel, laboriosam expedita
+                                fugit reiciendis voluptates corrupti ad, at accusantium ullam
+                                laudantium quis sunt deserunt id natus magni repellat, culpa
+                                ratione? Explicabo, ipsa?
+                            </p>
+                            <a href="#" class="card_link">Ver mais</a>
+                        </div>
+
+                        <div class="card_servico">
+                            <img src="../../docs/img/Fernanda_Dias.jpeg"
+                                 class="img_servico card-img-top"
+                                 alt="Foto do prestador de serviços" />
+                            <h1 class="titulo_servico">Eletricista 8</h1>
+                            <p class="localizacao_servico">Belo Horizonte</p>
+                            <p class="descricao_servico">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                                eligendi dolore provident repudiandae porro perferendis fugit
+                                illum. Illum, voluptate reprehenderit, expedita culpa aperiam
+                                ipsa consequatur, mollitia fugit est aliquam corporis.
+                            </p>
+                            <a href="#" class="card_link">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-control-next carousel_servicos_next"
+                 type="button"
+                 data-target="#carouselExampleControls"
+                 data-slide="next">
+                <span class="carousel-control-next-icon carousel_servicos_icone_antigo"
+                      aria-hidden="true"></span>
+                <i class="fa-solid fa-chevron-right carousel-next-icon"></i>
+                <span class="sr-only carousel_servicos_next_icone">Next</span>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer_icones">
+                <a href="../index.html"
+                   target="_blank"
+                   class="nav-link px-0 footer_icone">
+                    <i class="fa-brands fa-square-facebook fs-2"></i>
+                </a>
+
+                <a href="../index.html"
+                   target="_blank"
+                   class="nav-link px-0 footer_icone">
+                    <i class="fa-brands fa-square-twitter fs-2"></i>
+                </a>
+
+                <a href="../index.html"
+                   target="_blank"
+                   class="nav-link px-0 footer_icone">
+                    <i class="fa-brands fa-square-instagram fs-2"></i>
+                </a>
+            </div>
+
+            <p class="footer_texto">
+                2024, Serviço Fácil | Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/cadastro.js"></script>
+    <script src="https://kit.fontawesome.com/66a97ae9e9.js"
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+</body>
+</html>
